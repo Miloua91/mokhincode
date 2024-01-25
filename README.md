@@ -39,4 +39,4 @@ Check my code: [https://github.com/Miloua91/mokhincode](https://github.com/Milou
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [Astro]: https://img.shields.io/badge/astro-000000?style=for-the-badge&logo=astro
 [Astro-url]: https://astro.build
-[product-screenshot]: ./public/mokhincode.png
+[product-screenshot]: ./public/mokhincode.PNG
