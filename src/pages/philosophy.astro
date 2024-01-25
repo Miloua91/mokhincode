@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+  <head
+    ><title>Philosophy Bookshelf | Miloua Mokhtar</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Maven Pro"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE1SURBVDhPzZJNS0JBGIX7ldE2NajQitQoymybUVAGrirDyOiWCymQ0hbW2o2uhEz86oqIqGsfmmEmnOgWQYs6MIsL5zzveWfuBL/Ufwf0+9Dp6A9nOQO6XUinIbwJK0HY24V8Hno9bRjrI6Beh2RShdwusCyoVCCTgbVVmJuFwygMBjpgAopFCIVgxgMeN/i84F+GyDacxmFjHQ72lW800iETcCWmPeSg3Yb7O9iJgHdeTY3FRJNndR+3N1Cr6ZAJsF/h+AguxAqFgjJLY6uljnUJAT9MTULqWodMgKxl21B9gZxoImtLYyIBS4tqNXnkaqWSDpmA4RDOhFkGnx6h0YByGRZ84JqGYEBc8Dk0mzqgNAa8S9bNZiF+olbaCosmqS//h88AU3Kaw9ub+h7wA/01AN4AAx/BoqHeeiYAAAAASUVORK5CYII="
+    />
+
+    <style>
+      body {
+        font-family: "Maven Pro";
+        font-size: 13px;
+        width: 760px;
+        margin: auto;
+      }
+      p {
+        padding: 0px;
+        margin: 0px;
+      }
+      h2 {
+        padding: 0px;
+        margin: 0px;
+      }
+      h3 {
+        padding: 0px;
+        margin: 0px;
+      }
+      h4 {
+        padding: 0px;
+        margin: 0px;
+      }
+      h5 {
+        padding: 0px;
+        margin: 0px;
+      }
+      h6 {
+        padding: 0px;
+        margin: 0px;
+        font-size: 12px;
+      }
+      hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0.75),
+          rgba(0, 0, 0, 0)
+        );
+      }
+      ul {
+        list-style-type: none;
+        padding-inline-start: 3px;
+      }
+      li {
+        list-style-type: none;
+        padding-bottom: 3px;
+      }
+      .checked {
+        color: orange;
+      }
+      .unchecked {
+        color: gainsboro;
+      }
+      .dimgrey {
+        color: dimgrey;
+      }
+      .red {
+        color: red;
+      }
+      .green {
+        color: green;
+      }
+      .text_icon {
+        float: left;
+        padding-right: 5px;
+      }
+      .key_value {
+        font-size: 13px;
+        padding-bottom: 3px;
+      }
+      .title {
+        font-size: 30px;
+        color: #fe7473;
+        margin: auto;
+      }
+      .showcase {
+        display: flex;
+        align-items: center;
+      }
+      .details {
+        display: flex;
+        flex-direction: column;
+      }
+      .detail-item {
+        display: flex;
+        align-items: center;
+        padding-bottom: 3px;
+      }
+      .td-image {
+        vertical-align: top;
+        padding-right: 5px;
+        width: 135px;
+      }
+      .td-book {
+        text-align: left;
+        vertical-align: top;
+        padding: 0px;
+      }
+      .book-image {
+        width: 128px;
+        height: 197px;
+      }
+      @media (max-width: 768px) {
+        body {
+          width: unset; /* Set the width to 100% for smaller screens */
+        }
+      }
+    </style>
+  </head>
+</html><body>
+  <div class="showcase">
+    <img
+      src="data:image/png;base64,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"
+    />
+    <p class="title">Bookshelf - Your Virtual Library</p>
+  </div>
+  <hr />
+  <ul>
+    <li>
+      <table style="width:100%">
+        <tr>
+          <td class="td-image">
+            <img
+              src="data:image/image/jpeg;base64, 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"
+              class="book-image"
+            /></td
+          ><td class="td-book"
+            ><h2>Plato: Complete Works</h2><h3>Plato</h3><h4>
+              Hackett Publishing Company, Inc.-1997-05-01
+            </h4><h4>1848 pages</h4><br /><div>
+              <span
+                class="fa fa-check-circle unchecked text_icon"
+                title="Read Status"></span><span
+                class="fa fa-heart unchecked text_icon"
+                title="Wishlist"></span>
+            </div><br /><div>
+              <span class="fa fa-star checked"></span><span
+                class="fa fa-star checked"></span><span
+                class="fa fa-star checked"></span><span
+                class="fa fa-star checked"></span><span
+                class="fa fa-star checked"></span>
+            </div><br /><div class="key_value">
+              <b>Description:</b><h6>
+                Outstanding translations by leading contemporary scholars--many
+                commissioned especially for this volume--are presented here in
+                the first single edition to include the entire surviving corpus
+                of works attributed to Plato in antiquity. In his introductory
+                essay, John Cooper explains the presentation of these works,
+                discusses questions concerning the chronology of their
+                composition, comments on the dialogue form in which Plato wrote,
+                and offers guidance on approaching the reading and study of
+                Plato's works. Also included are concise introductions by Cooper
+                and Hutchinson to each translation, meticulous annotation
+                designed to serve both scholar and general reader, and a
+                comprehensive index. This handsome volume offers fine paper and
+                a high-quality Smyth-sewn cloth binding in a sturdy, elegant
+                edition.
+              </h6>
+            </div><br /><div class="details">
+              <div class="detail-item">
+                <span class="fa fa-barcode dimgrey text_icon" title="ISBN"
+                ></span>
+                <h5>9780872203495</h5>
+              </div>
+
+              <div class="detail-item">
+                <span
+                  class="fa fa-folder-open dimgrey text_icon"
+                  title="Bookshelf"></span>
+                <h5>Philosophy</h5>
+              </div>
+              <div class="key_value">
+                <b>Categories:</b>Western Philosophy: Ancient, To C 500
+              </div><div class="key_value">
+                <b>Translators:</b>Benjamin Jowett,Dorothea Frede,Alexander
+                Nehamas,Paul Woodruff,Anthony Kenny,Rosamond Kent
+                Sprague,Nicholas D. Smith,Karen Bell,D.S. Hutchinson,Donald J.
+                Zeyl,Francisco J. González,Diskin Clay,Malcolm Schofield,Glenn
+                R. Morrow,Jonathan Barnes,G.M.A. Grube,Brad Inwood,Mark
+                Joyal,Jackson P. Hershbell,J.M. Edmonds,C.D.C. Reeve,Myles
+                Burnyeat,Nicholas P. White,Mary Louise Gill,C.J. Rowe,Stanley
+                Lombardo,David Gallop,Jeffrey Mitscherling,Jr. Richard D.
+                McKiharan,Andrew S. Becker,Mark Reuter,M.J. Levett,Paul Ryan
+              </div><div class="key_value">
+                <b>Editors:</b>John M. Cooper
+              </div><div class="key_value"><b>Format:</b>Hardcover</div><div
+                class="key_value"
+              >
+                <b>Language:</b>en
+              </div>
+            </div></td
+          ></tr
+        >
+      </table><hr />
+    </li>
+  </ul></body
+>
+
