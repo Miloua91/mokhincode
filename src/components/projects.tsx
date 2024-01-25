@@ -1,5 +1,5 @@
 interface Details {
-	title: string; // title of the project.
+	projectTitle: string; // title of the project.
 	image: string; // image for destop or large size screens, the image should be small, 350 by 197 px.
 	imageSet: string; // image for smaller screens, i used 950 in width images.
 	description: string; // description of the project.
@@ -29,12 +29,12 @@ interface Details {
 	stackLinkVI: string;
 }
 
-export function Project(Project: Details) {
+export default function Project(Project: Details) {
 	return (
 		<div className={`my-6 lg:w-[760px] m-auto ${Project.style}`}>
 			<div className="text-xl font-semibold flex justify-between">
 				<a href={Project.link} target="_blank" rel="noreferrer">
-					{Project.title}
+					{Project.projectTitle}
 				</a>
 				<time>{Project.date}</time>
 			</div>
@@ -48,7 +48,7 @@ export function Project(Project: Details) {
 							src={Project.image}
 							width={350}
 							height={197}
-							alt={Project.title}
+							alt={Project.projectTitle}
 						/>
 					</picture>
 				</a>

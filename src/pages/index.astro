@@ -1,22 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Front } from "../components/Hero.tsx";
-import { Project } from "../components/projects.tsx";
+import Project from "../components/projects.tsx";
 ---
 
-<Layout title=`Miloua Mokhtar`>
+<Layout title={"Miloua Mokhtar"}>
   <div class="my-6">
     <Front client:load />
     <h1 class="text-3xl text-[#282828] font-semibold text-center mb-4">
       Projects
     </h1>
     <Project
-      title="Libray Tower"
-      date="January 2024"
+      projectTitle={"Libray Tower"}
+      date={"January 2024"}
       imageSet="library-tower-full.png"
       image="/library-tower.png"
       description="A minimalist library to read public domain books built with Next.js, Supabase and Tailwind."
       link="https://library-tower.vercel.app/"
+      githubLink=""
+      postLink=""
       style="text-[#3c3836]"
       badgeI="/next.svg"
       stackI="NextJs"
@@ -30,15 +32,22 @@ import { Project } from "../components/projects.tsx";
       badgeIV="/TypeScript.svg"
       stackIV="TypeScript"
       stackLinkIV="https://www.typescriptlang.org/"
+      badgeV=""
+      stackV=""
+      stackLinkV=""
+      badgeVI=""
+      stackVI=""
+      stackLinkVI=""
     />
     <Project
-      title="ArtistryNest"
+      projectTitle="ArtistryNest"
       date="December 2023"
       imageSet="artistrynest-full.png"
       image="artistrynest.png"
       description="A modern e-commerce website for home furniture made with Next.js and Supabase."
       link="https://artistrynest.shop/"
       githubLink="https://github.com/Miloua91/ArtistryNest"
+      postLink=""
       style="text-[#3c3836]"
       badgeI="/next.svg"
       stackI="NextJs"
@@ -49,6 +58,15 @@ import { Project } from "../components/projects.tsx";
       badgeIII="/JavaScript.svg"
       stackIII="JavaScript"
       stackLinkIII="https://developer.mozilla.org/fr/docs/Web/JavaScript"
+      badgeIV=""
+      stackIV=""
+      stackLinkIV=""
+      badgeV=""
+      stackV=""
+      stackLinkV=""
+      badgeVI=""
+      stackVI=""
+      stackLinkVI=""
     />
   </div>
 </Layout>
