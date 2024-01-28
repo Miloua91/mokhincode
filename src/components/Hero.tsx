@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Toggle } from "./ui/toggle.tsx";
 export function Front() {
-	const [onClick, setOnClick] = useState(true);
+	const [onClick, setOnClick] = useState(false);
 	function Butt() {
 		if (!onClick) {
 			setOnClick(true);
