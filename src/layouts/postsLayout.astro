@@ -1,0 +1,193 @@
+---
+import Header from "../components/Header.astro";
+import "../style/global.css";
+import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
+const { frontmatter } = Astro.props;
+const { title, author, date, description } = frontmatter;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <GoogleFontsOptimizer
+      url="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+    />
+    <meta name="theme-color" content="#282828" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="geo.region" content="DZ-29" />
+    <meta name="geo.placename" content="Mascara" />
+    <meta name="geo.position" content="28.000027;2.999983" />
+    <meta name="ICBM" content="28.000027, 2.999983" />
+    <link rel="me" href="mailto:miloua23@gmail.com" />
+    <!-- HTML Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://mokhincode.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://mokhincode.com/ogImage.jpg" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="mokhincode.com" />
+    <meta property="twitter:url" content="https://mokhincode.com/" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta
+      name="twitter:image"
+      content="https://mokhincode.com/twitterImage.jpg"
+    />
+    <!-- ... -->
+  </head>
+  <body class="mx-2 scroll-py-9">
+    <Header />
+    <div class="md:w-[760px] 2xl:w-1/2 m-auto font-dosis">
+      <h1 class="text-center mt-6 text-black underline font-semibold">
+        {title}
+      </h1>
+      <h3 class="text-center">
+        <span class="font-semibold underline">Author:</span>
+        {author}
+      </h3>
+      <p class="text-center">{date}</p>
+      <h3 class="text-center mb-4">
+        {description}
+      </h3>
+      <ul
+        id="nav"
+        class="absolute xl:-translate-x-72 xl:duration-0 duration-500 transition-all font-semibold xl:fixed"
+      >
+        <li>
+          <a
+            href="#motivation"
+            class="inline-block no-underline transition-colors hover:text-foreground font-semibold text-muted-foreground"
+            >Motivation for making this project</a
+          >
+        </li>
+        <li>
+          <a
+            href="#development"
+            class="inline-block no-underline transition-colors hover:text-foreground font-semibold text-muted-foreground"
+            >Development phase</a
+          >
+        </li>
+        <li>
+          <a
+            href="#deployment"
+            class="inline-block no-underline transition-colors hover:text-foreground font-semibold text-muted-foreground"
+            >Deployment</a
+          >
+        </li>
+        <li>
+          <a
+            href="#top"
+            id="top"
+            class="hidden w-8 h-4 xl:inline-block no-underline transition-colors hover:text-foreground font-semibold text-muted-foreground"
+            >TOP</a
+          >
+        </li>
+      </ul>
+      <div
+        class="absolute text-xl xl:absolute md:w-[760px] 2xl:w-1/2 xl:delay-100 xl:duration-500 transition-all xl:translate-y-0 translate-y-24 ease-in"
+      >
+        <slot />
+        <!-- Markdown content is injected here -->
+        <!-- ... -->
+      </div>
+    </div>
+    <script defer>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menu = document.querySelector("#nav");
+        const links = menu.querySelectorAll('a[href^="#"]');
+        const speed = 1000;
+        const easing = "easeOutSine";
+
+        function scrollToY(targetY) {
+          let currentTime = 0;
+          const startScroll =
+            window.scrollY || document.documentElement.scrollTop;
+
+          function animateScroll() {
+            currentTime += 1 / 60;
+            const timeFraction = currentTime / (speed / 1000);
+            const progress = easingFunctions[easing](timeFraction);
+
+            if (timeFraction < 1) {
+              window.requestAnimationFrame(animateScroll);
+              window.scrollTo(
+                0,
+                startScroll + (targetY - startScroll) * progress,
+              );
+            } else {
+              window.scrollTo(0, targetY);
+            }
+          }
+
+          animateScroll();
+        }
+
+        function menuControl() {
+          const currentScroll =
+            window.scrollY || document.documentElement.scrollTop;
+
+          links.forEach((link) => {
+            const target = document.querySelector(link.getAttribute("href"));
+            if (
+              target &&
+              target.offsetTop <= currentScroll &&
+              target.offsetTop + target.clientHeight > currentScroll
+            ) {
+              link.classList.add("active");
+            } else {
+              link.classList.remove("active");
+            }
+          });
+        }
+
+        function handleClick(event) {
+          event.preventDefault();
+          const target = document.querySelector(this.hash);
+          if (target) {
+            scrollToY(target.offsetTop);
+          }
+        }
+
+        function scrollToTop() {
+          scrollToY(200);
+        }
+
+        function init() {
+          links.forEach((link) => link.addEventListener("click", handleClick));
+          document.addEventListener("scroll", menuControl);
+
+          // Add a button or trigger to scroll to the top
+          const top = document.querySelector("#scrollToTopButton");
+          if (top) {
+            top.addEventListener("click", scrollToTop);
+          }
+        }
+
+        init();
+
+        console.log("Hello, Mokh!");
+      });
+
+      const easingFunctions = {
+        easeOutSine: (x) => Math.sin(x * (Math.PI / 2)),
+        // Add more easing functions as needed
+      };
+    </script>
+
+    <style is:global>
+      #nav li a.active {
+        color: black;
+      }
+    </style>
+  </body>
+</html>

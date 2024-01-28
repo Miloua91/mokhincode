@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Toggle } from "./ui/toggle.tsx";
 export function Front() {
-	const [onClick, setOnClick] = useState(false);
+	const [onClick, setOnClick] = useState(true);
 	function Butt() {
 		if (!onClick) {
 			setOnClick(true);
@@ -33,59 +33,66 @@ export function Front() {
 							onClick
 								? "ease-out opacity-100 translate-y-0 delay-100"
 								: "ease-in -translate-y-4 opacity-0 pointer-events-none"
-						} lg:w-[800px] flex flex-col justify-around gap-4 sm:flex-row`}
+						}`}
 					>
-						<div className="w-full flex justify-around sm:justify-around">
-							<a
-								className=" text-lg"
-								href="mailto:miloua23@gmail.com"
-								target="_blank"
-								rel="noreferrer"
-							>
-								miloua23@gmail.com
-							</a>
-							<a
-								href="https://www.upwork.com/freelancers/~01075155f047bedf73"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<img src="/upwork.svg" width={96} height={96} alt="upwork" />
-							</a>
-						</div>
-						<div className="w-full flex justify-around sm:justify-around">
-							<a
-								href="https://www.linkedin.com/in/mokhtar-miloua/"
-								target="_blank"
-								rel="noreferrer"
-							>
-								{" "}
-								<img src="/linkedin.svg" alt="LinkedIN" />
-							</a>
-							<a
-								href="https://github.com/Miloua91"
-								target="_blank"
-								rel="noreferrer"
-							>
-								{" "}
-								<img
-									src="/github.svg"
-									width={32}
-									height={32}
-									alt="GitHub"
-								/>{" "}
-							</a>
-							<a
-								href="https://www.instagram.com/miloua191"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<img
-									src="/instagram.svg"
-									width={32}
-									height={32}
-									alt="Instagram"
-								/>
-							</a>
+						<div className="w-full grid md:flex gap-2 md:gap-28">
+							<div className="w-full grid grid-flow-col justify-items-center md:flex md:justify-between">
+								<a
+									className=" text-lg"
+									href="mailto:miloua23@gmail.com"
+									target="_blank"
+									rel="noreferrer"
+								>
+									ceo@mokhincode.com
+								</a>
+								<a
+									href="https://www.upwork.com/freelancers/~01075155f047bedf73"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<img src="/upwork.svg" width={96} height={96} alt="upwork" />
+								</a>
+							</div>
+							<div className="w-full grid grid-cols-3  justify-items-center md:flex md:justify-between">
+								<a
+									href="https://www.linkedin.com/in/mokhtar-miloua/"
+									target="_blank"
+									rel="noreferrer"
+								>
+									{" "}
+									<img
+										src="/linkedin.svg"
+										alt="LinkedIN"
+										width={32}
+										height={32}
+									/>
+								</a>
+								<a
+									href="https://github.com/Miloua91"
+									target="_blank"
+									rel="noreferrer"
+								>
+									{" "}
+									<img
+										src="/github.svg"
+										width={32}
+										height={32}
+										alt="GitHub"
+									/>{" "}
+								</a>
+								<a
+									href="https://www.instagram.com/miloua191"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<img
+										src="/instagram.svg"
+										width={32}
+										height={32}
+										alt="Instagram"
+									/>
+								</a>
+							</div>
 						</div>
 					</div>
 					<hr
