@@ -29,8 +29,13 @@ const { title } = Astro.props;
     <title>{title}</title>
     <meta
       name="description"
-      content="I am Miloua Mokhtar a Web Developer fucusing on frontend and this is my portfolio."
+      content="I am Miloua Mokhtar a Web Developer focusing on frontend and this is my portfolio."
     />
+    <meta
+      name="keywords"
+      content="web development, front end developer, fullstack, portfolio"
+    />
+    <meta name="author" content="Miloua Mokhtar" />
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://mokhincode.com" />
@@ -38,7 +43,7 @@ const { title } = Astro.props;
     <meta property="og:title" content={title} />
     <meta
       property="og:description"
-      content="I am Miloua Mokhtar a Web Developer fucusing on frontend and this is my portfolio."
+      content="I am Miloua Mokhtar a Web Developer focusing on frontend and this is my portfolio."
     />
     <meta property="og:image" content="https://mokhincode.com/ogImage.jpg" />
 
@@ -49,7 +54,7 @@ const { title } = Astro.props;
     <meta name="twitter:title" content={title} />
     <meta
       name="twitter:description"
-      content="I am Miloua Mokhtar a Web Developer fucusing on frontend and this is my portfolio."
+      content="I am Miloua Mokhtar a Web Developer focusing on frontend and this is my portfolio."
     />
     <meta
       name="twitter:image"
@@ -61,37 +66,38 @@ const { title } = Astro.props;
   <body class="font-dosis">
     <Header />
     <slot />
-  </body><style is:global>
-    :root {
-      --accent: 136, 58, 234;
-      --accent-light: 224, 204, 250;
-      --accent-dark: 49, 10, 101;
-      --accent-gradient: linear-gradient(
-        45deg,
-        rgb(var(--accent)),
-        rgb(var(--accent-light)) 30%,
-        white 60%
-      );
-    }
-    html {
-      font-family: system-ui, sans-serif;
-      background: #00000;
-      background-size: 224px;
-    }
-    code {
-      font-family:
-        Menlo,
-        Monaco,
-        Lucida Console,
-        Liberation Mono,
-        DejaVu Sans Mono,
-        Bitstream Vera Sans Mono,
-        Courier New,
-        monospace;
-    }
-    body {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-  </style>
+    <style is:global>
+      :root {
+        --accent: 136, 58, 234;
+        --accent-light: 224, 204, 250;
+        --accent-dark: 49, 10, 101;
+        --accent-gradient: linear-gradient(
+          45deg,
+          rgb(var(--accent)),
+          rgb(var(--accent-light)) 30%,
+          white 60%
+        );
+      }
+      html {
+        font-family: system-ui, sans-serif;
+        background: #00000;
+        background-size: 224px;
+      }
+      code {
+        font-family:
+          Menlo,
+          Monaco,
+          Lucida Console,
+          Liberation Mono,
+          DejaVu Sans Mono,
+          Bitstream Vera Sans Mono,
+          Courier New,
+          monospace;
+      }
+      body {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    </style>
+  </body>
 </html>

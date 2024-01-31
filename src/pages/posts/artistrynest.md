@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/postsLayout.astro
-title: 'ArtistryNest: First project using a figma desgin.'
+title: 'ArtistryNest: First project using a figma desgin'
 author: Miloua Mokhtar
-date: 27 January 2024
+date: 01/27/2024 
 description: My personal experience usgin a figma design for the first time to build an e-commerce website. 
 ---
 
