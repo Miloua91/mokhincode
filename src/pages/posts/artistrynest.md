@@ -2,8 +2,9 @@
 layout: ../../layouts/postsLayout.astro
 title: 'ArtistryNest: First project using a figma desgin'
 author: Miloua Mokhtar
-date: 01/27/2024 
-description: My personal experience usgin a figma design for the first time to build an e-commerce website. 
+date: 27/01/2024 
+description: My personal experience using a figma design for the first time to build an e-commerce website. 
+location: 1
 ---
 
 I started learning web dev a month after graduation. I chose Java, thinking it would open up more job opportunities on the corporate side (Given the job market is tough everywhere). However, a month later, a friend of mine convinced me that web development could offer even more opportunities.

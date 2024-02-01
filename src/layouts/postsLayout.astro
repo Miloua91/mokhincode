@@ -30,6 +30,7 @@ const { title, author, date, description } = frontmatter;
       content="web development, front end developer, website development"
     />
     <meta name="author" content="Miloua Mokhtar" />
+    <meta name="date" content={date} />
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://mokhincode.com" />
@@ -50,9 +51,9 @@ const { title, author, date, description } = frontmatter;
     />
     <!-- ... -->
   </head>
-  <body class="mx-2 scroll-py-9">
+  <body class="mx-[10px] scroll-py-9 font-dosis">
     <Header />
-    <div class="md:w-[760px] 2xl:w-1/2 m-auto font-dosis">
+    <div class="md:w-[760px] 2xl:w-1/2 m-auto">
       <h1 class="text-center mt-6 text-black underline font-semibold">
         {title}
       </h1>

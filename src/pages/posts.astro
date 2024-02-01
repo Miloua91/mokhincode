@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+const posts = await Astro.glob("./posts/*.md");
+---
+
+<Layout title="Posts | Miloua Mokhtar">
+  <div class="md:w-[760px] m-auto mt-6">
+    <p class="text-2xl text-center">
+      This is a place where i share my experience building projects
+    </p>
+    {
+      posts
+        .sort((a, b) => b.frontmatter.location - a.frontmatter.location)
+        .map((post) => (
+          <div class="my-6">
+            <div>
+              <div class="flex items-center gap-2 md:justify-between">
+                <a href={post.url} class="text-xl font-semibold">
+                  {post.frontmatter.title}
+                </a>
+                <time>{post.frontmatter.date}</time>
+              </div>
+              <p class="text-lg">{post.frontmatter.description}</p>
+            </div>
+          </div>
+        ))
+    }
+  </div>
+</Layout>
