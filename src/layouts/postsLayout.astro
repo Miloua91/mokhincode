@@ -51,20 +51,20 @@ const { title, author, date, description, titles } = frontmatter;
     />
     <!-- ... -->
   </head>
-  <body class="mx-[10px] scroll-py-9 font-dosis">
+  <body class="mx-[10px] font-dosis">
     <Header />
     <div class="md:w-[760px] 2xl:w-1/2 m-auto">
-      <h1 class="text-center mt-6 text-black underline font-semibold">
+      <h1 class="text-center text-2xl mt-6 text-black underline font-semibold">
         {title}
       </h1>
-      <h3 class="text-center">
+      <h4 class="text-center text-lg">
         <span class="font-semibold underline">Author:</span>
         {author}
-      </h3>
+      </h4>
       <p class="text-center">{date}</p>
-      <h3 class="text-center mb-4">
+      <p class="text-lg text-center mb-4">
         {description}
-      </h3>
+      </p>
       <ul
         id="nav"
         class="absolute xl:-translate-x-72 xl:duration-0 duration-500 transition-all font-semibold xl:fixed"
@@ -75,7 +75,7 @@ const { title, author, date, description, titles } = frontmatter;
             <li>
               <a
                 href={`#${title.replace(/\s/g, "-")}`}
-                class="inline-block no-underline transition-colors hover:text-foreground font-semibold text-muted-foreground"
+                class="text-lg inline-block no-underline transition-colors hover:text-foreground font-semibold text-muted-foreground"
               >
                 {title}
               </a>
@@ -87,13 +87,13 @@ const { title, author, date, description, titles } = frontmatter;
           <a
             href="#Top"
             id="scrollToTopButton"
-            class="hidden w-8 h-4 xl:inline-block no-underline transition-colors hover:text-foreground font-semibold text-muted-foreground"
+            class="hidden w-8 h-4 xl:inline-block no-underline transition-colors hover:text-foreground font-semibold text-muted-foreground text-lg"
             >TOP</a
           >
         </li>
       </ul>
       <div
-        class="absolute text-xl xl:absolute md:w-[760px] 2xl:w-1/2 xl:delay-100 xl:duration-500 transition-all xl:translate-y-0 translate-y-24 ease-in"
+        class="prose prose-p:text-xl max-w-none prose-headings:underline 2xl:prose-xl text-black xl:delay-100 xl:duration-500 transition-all xl:translate-y-0 translate-y-24 ease-in mb-36"
       >
         <slot />
         <!-- Markdown content is injected here -->
