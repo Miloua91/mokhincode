@@ -5,4 +5,8 @@ author: Miloua Mokhtar
 date: 01/02/2024 
 description: Using Next.js and TailwindCSS to build a simple library to read public domain Ebooks.
 location: 2
+titles:
+  - Motivation for making this project
+  - Development phase
+  - Deployment
 ---

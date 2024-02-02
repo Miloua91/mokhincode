@@ -17,27 +17,22 @@ import Project from "../components/projects.tsx";
       image="/library-tower.png"
       description="A minimalist library to read public domain books built with Next.js, Supabase and Tailwind."
       link="https://library-tower.vercel.app/"
-      githubLink=""
-      postLink=""
+      githubLink="https://github.com/Miloua91/library-tower"
+      postLink="https://mokhincode.com/posts/library-tower"
       style="text-[#3c3836]"
-      badgeI="/next.svg"
-      stackI="NextJs"
-      stackLinkI="https://nextjs.org/"
-      badgeII="/supabase.svg"
-      stackII="Supabase"
-      stackLinkII="https://supabase.com/"
-      badgeIII="/tailwind.svg"
-      stackIII="Tailwind"
-      stackLinkIII="https://tailwindcss.com/"
-      badgeIV="/TypeScript.svg"
-      stackIV="TypeScript"
-      stackLinkIV="https://www.typescriptlang.org/"
-      badgeV=""
-      stackV=""
-      stackLinkV=""
-      badgeVI=""
-      stackVI=""
-      stackLinkVI=""
+      badges={[
+        "/next.svg",
+        "/supabase.svg",
+        "/tailwind.svg",
+        "/TypeScript.svg",
+      ]}
+      stacks={["NextJs", "Supabase", "Tailwind", "TypeScript"]}
+      stackLinks={[
+        "https://nextjs.org/",
+        "https://supabase.com/",
+        "https://tailwindcss.com/",
+        "https://www.typescriptlang.org/",
+      ]}
     />
     <Project
       projectTitle="ArtistryNest"
@@ -47,26 +42,15 @@ import Project from "../components/projects.tsx";
       description="A modern e-commerce website for home furniture made with Next.js and Supabase."
       link="https://artistrynest.shop/"
       githubLink="https://github.com/Miloua91/ArtistryNest"
-      postLink=""
+      postLink="https://mokhincode.com/posts/artistrynest"
       style="text-[#3c3836]"
-      badgeI="/next.svg"
-      stackI="NextJs"
-      stackLinkI="https://nextjs.org/"
-      badgeII="/supabase.svg"
-      stackII="Supabase"
-      stackLinkII="https://supabase.com/"
-      badgeIII="/JavaScript.svg"
-      stackIII="JavaScript"
-      stackLinkIII="https://developer.mozilla.org/fr/docs/Web/JavaScript"
-      badgeIV=""
-      stackIV=""
-      stackLinkIV=""
-      badgeV=""
-      stackV=""
-      stackLinkV=""
-      badgeVI=""
-      stackVI=""
-      stackLinkVI=""
+      badges={["/next.svg", "/supabase.svg", "/JavaScript.svg"]}
+      stacks={["NextJs", "Supabase", "JavaScript"]}
+      stackLinks={[
+        "https://nextjs.org/",
+        "https://supabase.com/",
+        "https://developer.mozilla.org/fr/docs/Web/JavaScript",
+      ]}
     />
   </div>
 </Layout>

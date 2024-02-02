@@ -3,7 +3,7 @@ import Header from "../components/Header.astro";
 import "../style/global.css";
 import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 const { frontmatter } = Astro.props;
-const { title, author, date, description } = frontmatter;
+const { title, author, date, description, titles } = frontmatter;
 ---
 
 <!doctype html>
@@ -69,31 +69,24 @@ const { title, author, date, description } = frontmatter;
         id="nav"
         class="absolute xl:-translate-x-72 xl:duration-0 duration-500 transition-all font-semibold xl:fixed"
       >
+        <!-- map over the titles from the markdown files in posts -->
+        {
+          titles?.map((title: string) => (
+            <li>
+              <a
+                href={`#${title.replace(/\s/g, "-")}`}
+                class="inline-block no-underline transition-colors hover:text-foreground font-semibold text-muted-foreground"
+              >
+                {title}
+              </a>
+            </li>
+          ))
+        }
+
         <li>
           <a
-            href="#motivation"
-            class="inline-block no-underline transition-colors hover:text-foreground font-semibold text-muted-foreground"
-            >Motivation for making this project</a
-          >
-        </li>
-        <li>
-          <a
-            href="#development"
-            class="inline-block no-underline transition-colors hover:text-foreground font-semibold text-muted-foreground"
-            >Development phase</a
-          >
-        </li>
-        <li>
-          <a
-            href="#deployment"
-            class="inline-block no-underline transition-colors hover:text-foreground font-semibold text-muted-foreground"
-            >Deployment</a
-          >
-        </li>
-        <li>
-          <a
-            href="#top"
-            id="top"
+            href="#Top"
+            id="scrollToTopButton"
             class="hidden w-8 h-4 xl:inline-block no-underline transition-colors hover:text-foreground font-semibold text-muted-foreground"
             >TOP</a
           >
@@ -165,7 +158,7 @@ const { title, author, date, description } = frontmatter;
         }
 
         function scrollToTop() {
-          scrollToY(200);
+          scrollToY(0);
         }
 
         function init() {
