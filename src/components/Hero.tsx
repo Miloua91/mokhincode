@@ -43,7 +43,7 @@ export function Front() {
 									target="_blank"
 									rel="noreferrer"
 								>
-									ceo@mokhincode.com
+								miloua23@gmail.com	
 								</a>
 								<a
 									href="https://www.upwork.com/freelancers/~01075155f047bedf73"

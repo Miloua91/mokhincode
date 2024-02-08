@@ -20,7 +20,7 @@ Before diving into this <a href="https://artistrynest.shop" target="_blanck">pro
 
 I had nothing to lose, so I began learning another language again—this time it was easier, thanks to <a href="https://www.youtube.com/@BroCodez" target="_blank">Bro Code</a> where I had previously learned Java from his courses.
 
-As I started working on projects, my learning pace accelerated. One of my early projects involved creating a library using the Google Books API to search for books and the Anna Archives to retrieve e-books to read from. I had difficulties making them work together, especially since I didn't have Anna's API or database; I simply was web scraping for books, which is not an ideal practice (Sorry, Anna).
+As I started working on projects, my learning pace accelerated. One of my early projects involved creating a library using the Google Books API to search for books and the Anna Archives to retrieve e-books to read from. I had difficulties making them work together, especially since I didn't have Anna's API or database. I simply was web scraping for books, which is not an ideal practice (Sorry, Anna).
 
 In mid-October, I decided to create an Upwork account with the hope of securing a freelance job. Unfortunately, there was too much competition, and it was hard to stand out as a new freelancer.
 
@@ -65,15 +65,13 @@ Coding the project was relatively easy since i had a figma design at hand and al
 
 Since it is an e-commerce website i needed to get product data, i could have made it easier using a mock data but i am a dummy (See what i did there). I opted for Supabase instead, they have a very generous free tier plan which suited my needs perfectly, along with their amazing and easy-to-navigate dashboard. Not only i stored the product data but i used their Auth system to authenticate and authorize users, store their orders and persist their cart state.
 
-
-
 </div>
 
 <div id="Deployment">
 
 ## **Deployment:**
 
-When I had finished my first project i easily deployed the front-end code but didn't know how to with the back-end where i used Express, i tried Firebase to deploy it as a function but i had to enter credit card details which i didn't have. I could have looked into other alternatives but i thought i would make the project even better (<a href="https://library-tower.vercel.app" target="_blank">Take a look</a>), so i didn't bother deploying the back-end.
+When I had finished my first project i easily deployed the front-end code but didn't know how to with the back-end where i used Express, i tried Firebase to deploy it as a function but i had to enter credit card details which i didn't have. I could have looked into other alternatives but i thought i would make the project even better (<a href="/posts/library-tower" target="_blank">Take a look</a>), so i didn't bother deploying the back-end.
 
 Using Next.js in this project eased the deployment process since i could deploy both the functions (API) and front-end using Vercel which is the company behind Next.js (Thank you Vercel). All i had to do was push my code into a Github repository, select it as a project in Vercel and deploy it. 
 

@@ -4,7 +4,7 @@ interface Details {
 	imageSet: string; // image for smaller screens, i used 950 in width images.
 	description: string; // description of the project.
 	link: string; // url to the project, website or code.
-	style: string; // to style the project like color or margins.
+	Pstyle: string; // to style the project like color or margins.
 	date: string; // project publication date.
 	githubLink: string; // github url of the project.
 	postLink: string; // url to the blog post about the project.
@@ -16,7 +16,7 @@ interface Details {
 
 export default function Project(Project: Details) {
 	return (
-		<div className={`my-6 lg:w-[760px] m-auto ${Project.style}`}>
+		<div className={`my-6 lg:w-[760px] m-auto ${Project.Pstyle}`}>
 			<div className="text-xl font-semibold flex justify-between">
 				<a href={Project.link} target="_blank" rel="noreferrer">
 					{Project.projectTitle}
