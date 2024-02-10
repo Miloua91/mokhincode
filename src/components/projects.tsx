@@ -29,7 +29,7 @@ export default function Project(Project: Details) {
 						<source media="(max-width: 767px)" srcSet={Project.imageSet} />
 						<source media="(min-width: 768px)" srcSet={Project.image} />
 						<img
-							className="w-full hover:shadow  hover:opacity-90 md:w-[350px] md:h-[197px] m-auto"
+							className="w-full hover:shadow  hover:opacity-90 m-auto md:w-[350px] md:h-[197px] h-auto"
 							src={Project.image}
 							width={350}
 							height={197}
@@ -46,7 +46,7 @@ export default function Project(Project: Details) {
 								target="_blank"
 								rel="noreferrer"
 							>
-								<img src={badge} alt={badge} className="rounded" />
+								<img src={badge} alt={badge} className="rounded w-auto h-[28px]" width={110} height={28} />
 							</a>
 						))}
 					</div>
