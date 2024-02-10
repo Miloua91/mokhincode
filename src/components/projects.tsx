@@ -29,7 +29,7 @@ export default function Project(Project: Details) {
 						<source media="(max-width: 767px)" srcSet={Project.imageSet} />
 						<source media="(min-width: 768px)" srcSet={Project.image} />
 						<img
-							className="w-full h-auto hover:shadow hover:opacity-90 m-auto md:w-[350px] md:h-[197px] max-w-none"
+							className="w-full h-auto hover:shadow hover:opacity-90 m-auto md:w-[350px] md:h-[197px] md:max-w-none"
 							src={Project.image}
 							width={350}
 							height={197}
