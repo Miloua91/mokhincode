@@ -9,6 +9,7 @@ titles:
   - Introduction
   - The structure 
   - The design
+  - TypeScript and TailwindCSS
 ---
 
 <div id="Introduction">
@@ -70,4 +71,22 @@ In the current library I choose a different approach, you would have a home page
 
 Currently I am not hosting a lot of public domain books but it is a work in progress. I get the books from the Gutenberg project, I really appreciate their efforts.
 
+</div>
+
+<div id="TypeScript-and-TailwindCSS">
+
+## **TypeScript and TailwindCSS:**
+
+I mentioned in the previous <a href="/posts/artistrynest" target="_blank">post</a> that I didn't know TS and Tailwind that is why I didn't use them. I had a lot of errors making the <a href="https://artistrynest.shop" target="_blank">ArtistryNest</a> website, from server problems, to states to hydration but I think a lot of them could have been avoided by using TS. In this current project I faced a fewer issues, maybe I gained more experience or the project was smaller compared to previous one but i think TS helped in minimizing the errors. I might be wrong so take my opinion with a bag of salt.
+
+Now on to Tailwind, I have nothing but good things to say about it. I had a really good experience using it, the only drawback is you have to learn the syntax but installing the VS Code extension or an <a href="https://en.wikipedia.org/wiki/Language_Server_Protocol" target="_blank">LSP</a> for code completion and checking Tailwind's docs from time to time will greatly improve the learning process. How it differs from plain CSS? Tailwind is like inline CSS style:
+
+``` html 
+<div style="width: 690px; height: 420px;">Nice</div> // Inline CSS
+
+<div class="w-[690px] h-[420px]">Nice</div> // TailwindCSS
+
+```
+So like they say, you don't leave the comfort of your html. Also you don't name the classes, I had a CSS file with 3K lines yea it is very helpful not to name the classes again. Personally, I appreciate CSS, especially when aiming to create something unique. It remains a powerful tool in web development.
+t
 </div>
