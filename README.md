@@ -31,9 +31,9 @@ Astro: A web framework for content-driven websites.<br/>
 <!-- CONTACT -->
 ## Contact
 
-Miloua Mokhtar - [LinkedIn](https://www.linkedin.com/in/mokhtar-miloua/) - [email](miloua23@gmail.com)
+Miloua Mokhtar - [LinkedIn](https://www.linkedin.com/in/mokhtar-miloua/) - <a href = "mailto: miloua23@gmail.com">Email</a>
 
-Check my code: [https://github.com/Miloua91/mokhincode](https://github.com/Miloua91/pandorascart)
+Website: [mokhincode.com](https://mokhincode.com)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
