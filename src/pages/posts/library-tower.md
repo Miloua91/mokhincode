@@ -88,5 +88,4 @@ Now on to Tailwind, I have nothing but good things to say about it. I had a real
 
 ```
 So like they say, you don't leave the comfort of your html. Also you don't name the classes, I had a CSS file with 3K lines yea it is very helpful not to name the classes again. Personally, I appreciate CSS, especially when aiming to create something unique. It remains a powerful tool in web development.
-t
 </div>
