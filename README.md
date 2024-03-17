@@ -20,7 +20,8 @@
 
 A simple minimal portfolio website to showcase my frontend skills and fullstack projects.
 
- * I chose to build the website with [Astro](https://astro.build) since it is a fast even a blazingly fast framework for content-driven websites like blogs and portfolios. 
+ * I chose to build the website with [Astro](https://astro.build) since it is a fast even a blazingly fast framework for content-driven websites like blogs and portfolios.
+ * Obviously, I also used Tailwind for styling.
 
 ### Built With
 
