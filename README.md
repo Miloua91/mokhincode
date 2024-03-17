@@ -25,9 +25,12 @@ A simple minimal portfolio website to showcase my frontend skills and fullstack 
 
 ### Built With
 
-Astro: A web framework for content-driven websites.<br/>
+Astro: A web framework for content-driven websites.
+
+TailwindCSS: A utility-first CSS framework.
 
 * [![Astro][Astro]][Astro-url]
+* [![Tailwind][Tailwind]][Tailwind-url]
 
 <!-- CONTACT -->
 ## Contact
