@@ -40,4 +40,6 @@ Website: [mokhincode.com](https://mokhincode.com)
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [Astro]: https://img.shields.io/badge/astro-000000?style=for-the-badge&logo=astro
 [Astro-url]: https://astro.build
+[Tailwind]: https://img.shields.io/badge/tailwindcss-000000?style=for-the-badge&logo=tailwindcss
+[Tailwind-url]: https://tailwindcss.com/
 [product-screenshot]: ./public/mokhincode.PNG
