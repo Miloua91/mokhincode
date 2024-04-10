@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import "../style/global.css";
+import Wave from "../components/Waves.tsx";
 import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 const { frontmatter } = Astro.props;
 const { title, author, date, description, titles } = frontmatter;
@@ -14,7 +15,7 @@ const { title, author, date, description, titles } = frontmatter;
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <GoogleFontsOptimizer
       url="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
-    />
+    /> 
     <meta name="theme-color" content="#282828" />
     <meta name="generator" content={Astro.generator} />
     <meta name="geo.region" content="DZ-29" />
@@ -65,6 +66,7 @@ const { title, author, date, description, titles } = frontmatter;
       <p class="text-lg text-center mb-4">
         {description}
       </p>
+      <Wave audio="artNestAudio.aac" client:only />
       <ul
         id="nav"
         class="absolute xl:-translate-x-72 xl:duration-0 duration-500 transition-all font-semibold xl:fixed"
@@ -92,6 +94,7 @@ const { title, author, date, description, titles } = frontmatter;
           >
         </li>
       </ul>
+
       <div
         class="prose prose-p:text-xl max-w-none prose-headings:underline 2xl:prose-xl text-black xl:delay-100 xl:duration-500 transition-all xl:translate-y-0 translate-y-24 ease-in mb-36"
       >
