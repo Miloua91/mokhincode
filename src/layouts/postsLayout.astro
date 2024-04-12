@@ -4,7 +4,7 @@ import "../style/global.css";
 import Wave from "../components/Waves.tsx";
 import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 const { frontmatter } = Astro.props;
-const { title, author, date, description, titles } = frontmatter;
+const { title, author, date, description, titles, audio } = frontmatter;
 ---
 
 <!doctype html>
@@ -66,7 +66,7 @@ const { title, author, date, description, titles } = frontmatter;
       <p class="text-lg text-center mb-4">
         {description}
       </p>
-      <Wave audio="artNestAudio.aac" client:only />
+      <Wave audio={audio} client:only />
       <ul
         id="nav"
         class="absolute xl:-translate-x-72 xl:duration-0 duration-500 transition-all font-semibold xl:fixed"
