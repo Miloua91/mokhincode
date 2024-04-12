@@ -9,6 +9,7 @@ interface prop {
 export default function Wave(props: prop) {
   const wavesurferRef = useRef<WaveSurfer | null>(null); // Specify the type of wavesurferRef
   const [playPause, setPlayPause] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (!wavesurferRef.current) {
@@ -21,6 +22,10 @@ export default function Wave(props: prop) {
         barHeight: 1.2,
         barGap: 2,
         barWidth: 3,
+      });
+
+      wavesurferRef.current.on("ready", () => {
+        setLoading(false);
       });
 
       wavesurferRef.current.on("interaction", () => {
@@ -53,7 +58,9 @@ export default function Wave(props: prop) {
     <div className="mb-4 w-full h-20 bg-gray-100 rounded-xl">
       <div className="flex items-center">
         <div className="w-10 h-10 py-5 ml-5 mr-2">
-          {!playPause ? (
+          {loading ? (
+            <PlayCircleIcon className="animate-pulse" />
+          ) : !playPause ? (
             <PlayCircleIcon onClick={togglePlay} />
           ) : (
             <PauseCircleIcon onClick={togglePause} />
