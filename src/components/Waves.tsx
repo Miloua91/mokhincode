@@ -27,9 +27,14 @@ export default function Wave(props: prop) {
       wavesurferRef.current.on("ready", () => {
         setLoading(false);
       });
+      wavesurferRef.current.on("finish", () => {
+        wavesurferRef.current?.seekTo(0);
+        setPlayPause(false);
+      });
 
       wavesurferRef.current.on("interaction", () => {
         wavesurferRef.current?.play();
+        setPlayPause(true);
       });
     }
 
