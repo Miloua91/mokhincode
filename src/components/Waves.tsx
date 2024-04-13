@@ -19,7 +19,7 @@ export default function Wave(props: prop) {
         waveColor: "#333",
         progressColor: "#333",
         url: `/${props.audio}`,
-        barHeight: 1.2,
+        barHeight: 0.9,
         barGap: 2,
         barWidth: 3,
       });
