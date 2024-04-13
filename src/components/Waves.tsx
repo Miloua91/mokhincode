@@ -66,9 +66,9 @@ export default function Wave(props: prop) {
           {loading ? (
             <PlayCircleIcon className="animate-pulse" />
           ) : !playPause ? (
-            <PlayCircleIcon onClick={togglePlay} />
+            <PlayCircleIcon height={36} width={36} onClick={togglePlay} />
           ) : (
-            <PauseCircleIcon onClick={togglePause} />
+            <PauseCircleIcon height={36} width={36} onClick={togglePause} />
           )}
         </div>
         <div className="w-full h-10">
