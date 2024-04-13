@@ -4,7 +4,7 @@ title: 'ArtistryNest: My First project using a figma desgin with Next.js'
 author: Miloua Mokhtar
 date: 27/01/2024 
 description: Personal background and experience using a figma design for the first time to build an e-commerce website. 
-audio: artNestAudio.aac
+audio: artNestAudio.ogg
 location: 1
 titles:
   - Introduction
