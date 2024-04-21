@@ -39,7 +39,7 @@ Unlike in the older library where I wanted to include all the books available in
 
 ## **The design:**
 
-The design of the first library was simple, I would search and display books with <a href="https://developers.google.com/books" target="_blank">Google Books API</a>. Then you would chose a book and a modal would pop up with the book's information and the option to download it or read it.
+The design of the first library was simple, I would search and display books with <a href="https://developers.google.com/books" target="_blank">Google Books API</a>. Then you would choose a book and a modal would pop up with the book's information and the option to download it or read it.
 
 <div class="flex flex-col items-center -my-8">
 
@@ -88,5 +88,5 @@ Now on to Tailwind, I have nothing but good things to say about it. I had a real
 <div class="w-[690px] h-[420px]">Nice</div> // TailwindCSS
 
 ```
-So like they say, you don't leave the comfort of your html. Also you don't name the classes, I had a CSS file with 3K lines yea it is very helpful not to name the classes again. Personally, I appreciate CSS, especially when aiming to create something unique. It remains a powerful tool in web development.
+So like they say, you don't leave the comfort of your html. Also you don't name the classes, I had a CSS file with 3K lines, so it was hard to track the classes. With Tailwind, it is very helpful not to name the classes again. Personally, I appreciate CSS, especially when aiming to create something unique. It remains a powerful tool in web development.
 </div>
