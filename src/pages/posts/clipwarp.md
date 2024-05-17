@@ -7,5 +7,6 @@ description: Making a synced clipboard app between phone and desktop.
 audio: artNestAudio.ogg
 location: 1
 titles:
+ - Introduction
 
 ---
