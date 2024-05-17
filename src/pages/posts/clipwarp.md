@@ -8,5 +8,6 @@ audio: artNestAudio.ogg
 location: 1
 titles:
  - Introduction
+ - Stack Choice
 
 ---
