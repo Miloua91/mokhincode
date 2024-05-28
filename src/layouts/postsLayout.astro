@@ -10,12 +10,12 @@ const { title, author, date, description, titles, audio } = frontmatter;
 <!doctype html>
 <html lang="en">
   <head>
+    <GoogleFontsOptimizer
+      url="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <GoogleFontsOptimizer
-      url="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
-    /> 
     <meta name="theme-color" content="#282828" />
     <meta name="generator" content={Astro.generator} />
     <meta name="geo.region" content="DZ-29" />
@@ -59,7 +59,7 @@ const { title, author, date, description, titles, audio } = frontmatter;
         {title}
       </h1>
       <h2 class="text-center text-lg">
-        <span class="font-semibold underline">Author:</span>
+        <span class="font-semibold underline">Written by</span>
         {author}
       </h2>
       <p class="text-center">{date}</p>
