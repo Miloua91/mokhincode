@@ -1,15 +1,15 @@
 ---
 layout: ../../layouts/postsLayout.astro
-title: 'Library Tower: Building a public domain libary using Next.js'
+title: 'Library Tower: Building a public domain library using Next.js'
 author: Miloua Mokhtar
-date: 01/02/2024 
+date: 16/02/2024 
 description: Using Next.js and TailwindCSS to build a simple library to read public domain Ebooks.
 audio: libraryTower.ogg
 location: 2
 titles:
   - Introduction
-  - The structure 
-  - The design
+  - Structure 
+  - Design
   - TypeScript and TailwindCSS
 ---
 
@@ -25,9 +25,9 @@ When deploying the project I got stuck with the server and also the library didn
 
 </div>
 
-<div id="The-structure">
+<div id="Structure">
 
-## **The structure:**
+## **Structure:**
 
 I didn't plan how I would build the first library, just organically building it, which I think is fine since it was my first project but having a structure would make the process easier.
 
@@ -35,9 +35,9 @@ Unlike in the older library where I wanted to include all the books available in
 
 </div>
 
-<div id="The-design">
+<div id="Design">
 
-## **The design:**
+## **Design:**
 
 The design of the first library was simple, I would search and display books with <a href="https://developers.google.com/books" target="_blank">Google Books API</a>. Then you would choose a book and a modal would pop up with the book's information and the option to download it or read it.
 
@@ -88,5 +88,5 @@ Now on to Tailwind, I have nothing but good things to say about it. I had a real
 <div class="w-[690px] h-[420px]">Nice</div> // TailwindCSS
 
 ```
-So like they say, you don't leave the comfort of your html. Also you don't name the classes, I had a CSS file with 3K lines, so it was hard to track the classes. With Tailwind, it is very helpful not to name the classes again. Personally, I appreciate CSS, especially when aiming to create something unique. It remains a powerful tool in web development.
+So like they say, you don't leave the comfort of your html. Also you don't name the classes, I had a CSS file with 3K lines, so it was hard to track the classes but with Tailwind, it is very helpful not to name the classes again. Personally, I appreciate CSS, especially when aiming to create something unique. It remains a powerful tool in web development.
 </div>
