@@ -22,6 +22,7 @@ export default function Wave(props: prop) {
         barHeight: 0.9,
         barGap: 2,
         barWidth: 3,
+        dragToSeek: true,
       });
 
       wavesurferRef.current.on("ready", () => {
