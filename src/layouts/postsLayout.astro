@@ -69,7 +69,7 @@ const { title, author, date, description, titles, audio } = frontmatter;
       <Wave audio={audio} client:visible />
       <ul
         id="nav"
-        class="absolute xl:-translate-x-72 xl:duration-0 duration-500 transition-all font-semibold xl:fixed"
+        class="absolute xl:-translate-x-[250px] xl:duration-0 duration-500 transition-all font-semibold xl:fixed"
       >
         <!-- map over the titles from the markdown files in posts -->
         {
@@ -176,8 +176,6 @@ const { title, author, date, description, titles, audio } = frontmatter;
         }
 
         init();
-
-        console.log("Hello, Mokh!");
       });
 
       const easingFunctions = {
