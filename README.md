@@ -20,29 +20,23 @@
 
 A simple minimal portfolio website to showcase my frontend skills and fullstack projects.
 
- * I chose to build the website with [Astro](https://astro.build) since it is a fast even a blazingly fast framework for content-driven websites like blogs and portfolios.
- * Obviously, I also used Tailwind for styling.
+ * I chose to build the website with [Astro](https://astro.build) since it is a fast even a blazingly fast framework for content-driven websites like blogs and portfolios. 
 
 ### Built With
 
-Astro: A web framework for content-driven websites.
-
-TailwindCSS: A utility-first CSS framework.
+Astro: A web framework for content-driven websites.<br/>
 
 * [![Astro][Astro]][Astro-url]
-* [![Tailwind][Tailwind]][Tailwind-url]
 
 <!-- CONTACT -->
 ## Contact
 
-Miloua Mokhtar - [LinkedIn](https://www.linkedin.com/in/mokhtar-miloua/) - <a href = "mailto: miloua23@gmail.com">Email</a>
+Miloua Mokhtar - [LinkedIn](https://www.linkedin.com/in/mokhtar-miloua/) - [email](miloua23@gmail.com)
 
-Website: [mokhincode.com](https://mokhincode.com)
+Check my code: [https://github.com/Miloua91/mokhincode](https://github.com/Miloua91/pandorascart)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [Astro]: https://img.shields.io/badge/astro-000000?style=for-the-badge&logo=astro
 [Astro-url]: https://astro.build
-[Tailwind]: https://img.shields.io/badge/tailwindcss-000000?style=for-the-badge&logo=tailwindcss
-[Tailwind-url]: https://tailwindcss.com/
 [product-screenshot]: ./public/mokhincode.PNG
