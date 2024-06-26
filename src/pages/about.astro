@@ -89,11 +89,11 @@ import Layout from "../layouts/Layout.astro";
       <!-- Item #1 -->
       <div class="relative pl-8 sm:pl-32 py-6 group">
         <!-- Purple label -->
-        <div
+        <h1
           class="font-caveat font-medium text-2xl text-purple-400 mb-1 sm:mb-0"
         >
           Bac Génie Électrique
-        </div>
+        </h1>
         <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
         <div
           class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-purple-400 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5"
@@ -102,25 +102,25 @@ import Layout from "../layouts/Layout.astro";
             class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full"
             >Juin, 2017</time
           >
-          <div class="text-xl font-bold text-slate-900">
+          <h2 class="text-xl font-bold text-slate-900">
             Amir Khaled, Mascara, Algeria
-          </div>
+          </h2>
         </div>
         <!-- Content -->
-        <div class="text-slate-500">
+        <p class="text-slate-500">
           Graduated from high school with a specialization in electrical
           engineering.
-        </div>
+        </p>
       </div>
 
       <!-- Item #2 -->
       <div class="relative pl-8 sm:pl-32 py-6 group">
         <!-- Purple label -->
-        <div
+        <h1
           class="font-caveat font-medium text-2xl text-purple-400 mb-1 sm:mb-0"
         >
           Master Télécommunication Spatiale
-        </div>
+        </h1>
         <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
         <div
           class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-purple-400 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5"
@@ -129,25 +129,34 @@ import Layout from "../layouts/Layout.astro";
             class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full"
             >Juin, 2023</time
           >
-          <div class="text-xl font-bold text-slate-900">
+          <h2 class="text-xl font-bold text-slate-900">
             Saad Dahleb University, Blida, Algeria
-          </div>
+          </h2>
         </div>
         <!-- Content -->
-        <div class="text-slate-500">
+        <p class="text-slate-500">
           The courses I took primarily focused on wired and wireless
           telecommunications, orbital mechanics, and programming.
-        </div>
+        </p>
+        <p class="text-slate-500">
+          <span class="font-bold">Published conference paper:</span> A UAV-Based
+          Close Monitoring of The Vegetation for Precision Agriculture Purposes.
+          DOI: <a
+            href="https://doi.org/10.1109/M2GARSS57310.2024.10537513"
+            target="_blank"
+            class="font-bold">10.1109/M2GARSS57310.2024.10537513</a
+          >
+        </p>
       </div>
 
       <!-- Item #3 -->
       <div class="relative pl-8 sm:pl-32 py-6 group">
         <!-- Purple label -->
-        <div
+        <h1
           class="font-caveat font-medium text-2xl text-purple-400 mb-1 sm:mb-0"
         >
-          Web Dev
-        </div>
+          Web Development
+        </h1>
         <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
         <div
           class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-purple-400 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5"
@@ -156,14 +165,41 @@ import Layout from "../layouts/Layout.astro";
             class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full"
             >August, 2023</time
           >
-          <div class="text-xl font-bold text-slate-900">Self Taught</div>
+          <h2 class="text-xl font-bold text-slate-900">Self Taught</h2>
         </div>
         <!-- Content -->
-        <div class="text-slate-500">
+        <p class="text-slate-500">
           After graduating from university, I began learning web development
           with a focus on the frontend. I learned the basics of HTML, CSS, and
           JavaScript, and I am currently working with React and Next.js.
+        </p>
+      </div>
+
+      <!-- Item #4 -->
+      <div class="relative pl-8 sm:pl-32 py-6 group">
+        <!-- Purple label -->
+        <h1 class="font-caveat font-medium text-2xl text-blue-400 mb-1 sm:mb-0">
+          Alfec
+        </h1>
+        <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+        <div
+          class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-purple-400 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5"
+        >
+          <time
+            class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full"
+            >Juin, 2024</time
+          >
+          <h2 class="text-xl font-bold text-slate-900">
+            Frontend Developer Internship
+          </h2>
         </div>
+        <!-- Content -->
+        <p class="text-slate-500">
+          My first internship after I started learning web development. My first
+          task was to fix minor bugs in a React Native app and prepare it for
+          publishing. Later, I worked on various projects for their clients,
+          including websites and ad panels.
+        </p>
       </div>
     </div>
   </div>
