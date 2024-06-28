@@ -15,7 +15,11 @@ titles:
   - The software
 ---
 
+<div align="center">
+
 <img src="/presentation.png" class="mt-24 xl:mt-0 -mb-16">
+
+</div>
 
 <div id="Why-make-ClipWarp">
 
@@ -51,7 +55,11 @@ I served the files on the local network with <a href="https://www.uvicorn.org/" 
 
 At this point my friend was also making the GUI app, he made it with PyQt and all it did was send the data with a WebSocket server.
 
+<div align="center">
+
 ![clipwarp-friend-ed](/clipwarp-friend-ed.png)
+
+</div>
 
 We both are lacking in the UI design side, but we are working on it. From my friend's part he completed the project and I had the mobile app and web app to work on but also needed to add features in the desktop app (lots of apps). My friend's python code was way better than mine, he structured it across multiple files, whereas mine was in a single file. He used PyQt, which more modern than tkinter. So I took his code and added the features I wanted.
 
@@ -76,7 +84,11 @@ I had intentions to develop mobile apps since I started programming, everyone ha
 
 I was skeptical of React Native, to develop cross mobile apps sounds a bit too good but after using it with Expo I became infatuated, it kinda gamified the process and made it enjoyable. The pictures are proof of it.
 
-![mobile-app-progress](/progress.png)
+<div align="center">
+
+<img src="/progress.png" class="rounded-lg w-[1200px]" />
+
+</div>
 
 If it wasn't for React and the ease of development provided by Expo, I don't think I would have made this progress.
 
