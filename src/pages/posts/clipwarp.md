@@ -116,6 +116,6 @@ The final and easiest app to develop, I made it with Astro, React, used <a href=
 
 The final software is a desktop app that acts as a server that hosts the database and serves the web app and a mobile app that gets the data and displays it to the user. Now I can share links and text between my phone and desktop.
 
-I didn't think I would have much opportunities to use the apps but I found myself using them daily at work and at home. In the end I learned mobile development and made a personally useful app.
+I didn't think I would have much opportunities to use the apps but I found myself using them daily at work and at home. In the end I learned mobile development, python, project collaboration with my friend and made a personally useful app.
 
 </div>
