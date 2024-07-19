@@ -51,7 +51,7 @@ Since I didn't find libraries for React Native to serve a static website, I thou
 
 Well, I was learning python while making the app, just doing the project based learning thing ◕‿↼).
 
-I served the files on the local network with <a href="https://www.uvicorn.org/" target="_blank">uvicorn</a>, which is a web server and <a href="https://www.neoteroi.dev/blacksheep/" target="_blank">blacksheep</a>, which is an asynchronous web framework. These two python packages worked great in development but when I wanted to make an executable I faced many issues (I might have a skill issue) related to hidden imports with pyinstaller to missing files that blacksheep needs so I switched to flask which did both of these packages work, I also was using flask as a backend server to send the data which I stored in a SQLite database locally of of course.
+I served the files on the local network with <a href="https://www.uvicorn.org/" target="_blank">uvicorn</a>, which is a web server and <a href="https://www.neoteroi.dev/blacksheep/" target="_blank">blacksheep</a>, which is an asynchronous web framework. These two python packages worked great in development but when I wanted to make an executable I faced many issues (I might have a skill issue) related to hidden imports with pyinstaller to missing files that blacksheep needs so I switched to flask which did both of these packages work, I also was using flask as a backend server to send the data which I stored in a SQLite database locally of course.
 
 At this point my friend was also making the GUI app, he made it with PyQt and all it did was send the data with a WebSocket server.
 
@@ -61,7 +61,7 @@ At this point my friend was also making the GUI app, he made it with PyQt and al
 
 </div>
 
-We both are lacking in the UI design side, but we are working on it. From my friend's part he completed the project and I had the mobile app and web app to work on but also needed to add features in the desktop app (lots of apps). My friend's python code was way better than mine, he structured it across multiple files, whereas mine was in a single file. He used PyQt, which more modern than tkinter. So I took his code and added the features I wanted.
+We both are lacking in the UI design side, but we are working on it. From my friend's part he completed the project and I had the mobile app and web app to work on but also needed to add features in the desktop app (lots of apps). My friend's python code was way better than mine, he structured it across multiple files, whereas mine was in a single file. He used PyQt, which is more modern than tkinter. So I took his code and added the features I wanted.
 
 
 Is UI a feature? Let's pretend it is, after I changed my friend's UI code it looked like this. Not bad?
@@ -82,7 +82,7 @@ This UI took more work than it should have but I am glad how it turned out. With
 
 I had intentions to develop mobile apps since I started programming, everyone has a phone nowadays so it's easier to reach people making something they would find useful. I hope ClipWarp is as useful as I intended to be. 
 
-I was skeptical of React Native, to develop cross mobile apps sounds a bit too good but after using it with Expo I became infatuated, it kinda gamified the process and made it enjoyable. The pictures are proof of it.
+I was skeptical of React Native, to develop cross mobile apps using javascript sounds a bit too good but after using it with Expo I became infatuated, it kinda gamified the process and made it enjoyable. The pictures are proof of it.
 
 <div align="center">
 
