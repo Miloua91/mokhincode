@@ -11,22 +11,25 @@ export function Front() {
   }
   return (
     <>
-      <div className="text-center text-2xl md:text-3xl lg:w-[760px] md:m-auto">
-        hello there! i'am miloua mokhtar, a software developer with a strong
-        problem-solving mindset and a passion for creating functional,
-        efficient, and user-friendly applications. take a look at my projects or
-        <Toggle
-          className="disabled mx-1 text-2xl md:text-3xl hover:bg-gray-100 text-gray-800 h-8 pb-1 md:h-9 md:pb-2 px-1 border border-gray-400 rounded-lg shadow"
-          type="button"
-          onClick={Butt}
-        >
-          contact
-        </Toggle>
-        me to collaborate on your next project.
-        <hr className="lg:w-[760px] m-auto border-gray-400 my-4" />
+      <div className="2xl:w-1/2 text-center text-2xl md:text-3xl lg:w-[798px] md:m-auto bg-white rounded-md pt-2 border-l border-r border-t shadow">
+        <p className="px-4">
+          hello there! i'am miloua mokhtar, a software developer with a strong
+          problem-solving mindset and a passion for creating functional,
+          efficient, and user-friendly applications. take a look at my projects
+          or
+          <Toggle
+            className="disabled mx-1 text-2xl md:text-3xl hover:bg-gray-100 text-gray-800 h-8 pb-1 md:h-9 md:pb-2 px-1 border border-gray-400 rounded-lg shadow bg-white"
+            type="button"
+            onClick={Butt}
+          >
+            contact
+          </Toggle>
+          me to collaborate on your next project.
+        </p>
+        <hr className="2xl:w-full lg:w-[798px] m-auto border-gray-400 my-4" />
         <div
           className={`transition-all ease-out ${
-            onClick ? "duration-200" : "duration-500 delay-500 -mb-28 sm:-mb-16"
+            onClick ? "duration-200" : "duration-500 delay-500 -mb-16 sm:-mb-16"
           }`}
         >
           <div
@@ -36,7 +39,7 @@ export function Front() {
                 : "ease-in -translate-y-4 opacity-0 pointer-events-none"
             }`}
           >
-            <div className="w-full grid md:flex gap-2 md:gap-28">
+            <div className="w-full px-2 grid md:flex gap-2 md:gap-28">
               <div className="w-full grid grid-flow-col justify-items-center md:flex md:justify-between">
                 <a
                   className=" text-lg"
@@ -101,7 +104,7 @@ export function Front() {
               onClick
                 ? "opacity-100 ease-out translate-y-0"
                 : "ease-in -translate-y-4 opacity-0"
-            } lg:w-[760px] m-auto border-gray-400 my-4`}
+            } 2xl:w-full lg:w-[798px] m-auto border-gray-400 my-4 sm:my-3`}
           />
         </div>
       </div>
