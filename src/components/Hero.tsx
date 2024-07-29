@@ -99,12 +99,12 @@ export function Front() {
               </div>
             </div>
           </div>
-          <hr
+          <div
             className={`transition-all duration-500 ${
               onClick
                 ? "opacity-100 ease-out translate-y-0"
                 : "ease-in -translate-y-4 opacity-0"
-            } 2xl:w-full lg:w-[798px] m-auto border-gray-400 my-4 sm:my-3`}
+            } 2xl:w-full lg:w-[798px] m-auto border-gray-400 pb-1 my-4 sm:my-3`}
           />
         </div>
       </div>
