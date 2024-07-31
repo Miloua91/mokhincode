@@ -53,12 +53,14 @@ const { title, author, date, description, titles, audio } = frontmatter;
     />
     <!-- ... -->
   </head>
-  <body class="mx-[10px] font-dosis min-h-screen">
+  <body class="mx-[10px] font-dosis min-h-screen dark:bg-stone-800">
     <Header />
     <div
-      class="md:w-[798px] px-4 my-4 bg-white rounded-md border shadow 2xl:w-1/2 m-auto"
+      class="dark:text-stone-100 dark:bg-stone-700 dark:border-stone-600 md:w-[798px] px-4 my-4 bg-white rounded-md border shadow 2xl:w-1/2 m-auto"
     >
-      <h1 class="text-center text-2xl mt-6 text-black underline font-semibold">
+      <h1
+        class="dark:text-stone-200 text-center text-2xl mt-6 text-black underline font-semibold"
+      >
         {title}
       </h1>
       <h2 class="text-center text-lg">
@@ -80,7 +82,7 @@ const { title, author, date, description, titles, audio } = frontmatter;
             <li>
               <a
                 href={`#${title.replace(/\s/g, "-")}`}
-                class="text-lg inline-block no-underline transition-colors hover:text-foreground font-semibold text-muted-foreground"
+                class="text-lg inline-block no-underline transition-colors dark:text-stone-300 hover:text-foreground font-semibold text-muted-foreground"
               >
                 {title}
               </a>
@@ -92,14 +94,14 @@ const { title, author, date, description, titles, audio } = frontmatter;
           <a
             href="#Top"
             id="scrollToTopButton"
-            class="hidden w-8 h-4 xl:inline-block no-underline transition-colors hover:text-foreground font-semibold text-muted-foreground text-lg"
+            class="hidden w-8 h-4 xl:inline-block no-underline transition-colors dark:text-stone-300 hover:text-foreground font-semibold text-muted-foreground text-lg"
             >TOP</a
           >
         </li>
       </ul>
 
       <div
-        class="prose prose-p:text-xl max-w-none prose-headings:underline 2xl:prose-xl text-black xl:delay-100 xl:duration-500 transition-all xl:translate-y-0 translate-y-24 ease-in mb-36"
+        class="dark:text-stone-100 prose prose-p:text-xl max-w-none prose-headings:underline dark:prose-headings:text-stone-200 dark:prose-a:text-stone-300 2xl:prose-xl text-black xl:delay-100 xl:duration-500 transition-all xl:translate-y-0 translate-y-24 ease-in mb-36"
       >
         <slot />
         <!-- Markdown content is injected here -->
@@ -192,10 +194,7 @@ const { title, author, date, description, titles, audio } = frontmatter;
 
     <style is:global>
       #nav li a.active {
-        color: black;
-      }
-      body {
-        background-color: rgb(250 250 249);
+        color: rgb(115 115 115);
       }
     </style>
   </body>
