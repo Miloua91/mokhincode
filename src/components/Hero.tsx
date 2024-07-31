@@ -11,7 +11,7 @@ export function Front() {
   }
   return (
     <>
-      <div className="2xl:w-1/2 text-center text-2xl md:text-3xl lg:w-[798px] md:m-auto bg-white rounded-md pt-2 border-l border-r border-t shadow">
+      <div className="dark:bg-stone-700 2xl:w-1/2 text-center text-2xl md:text-3xl lg:w-[798px] md:m-auto bg-white rounded-md pt-2 border-l border-r border-t dark:border-stone-600 shadow">
         <p className="px-4">
           hello there! i'am miloua mokhtar, a software developer with a strong
           problem-solving mindset and a passion for creating functional,
@@ -26,7 +26,7 @@ export function Front() {
           </Toggle>
           me to collaborate on your next project.
         </p>
-        <hr className="2xl:w-full lg:w-[798px] m-auto border-gray-400 my-4" />
+        <hr className="dark:border-stone-100 2xl:w-full lg:w-[798px] m-auto border-gray-400 my-4" />
         <div
           className={`transition-all ease-out ${
             onClick ? "duration-200" : "duration-500 delay-500 -mb-20 sm:-mb-20"
