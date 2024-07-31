@@ -21,7 +21,7 @@ interface Details {
 export default function Project(Project: Details) {
   return (
     <div
-      className={`my-6 2xl:w-full lg:w-[780px] m-auto ${Project.Pstyle} bg-stone-50 rounded-md px-2 py-1 border border-gray-300 shadow`}
+      className={`dark:bg-stone-600 dark:text-stone-100 dark:border-stone-500 my-6 2xl:w-full lg:w-[760px] m-auto ${Project.Pstyle} bg-stone-50 rounded-md px-2 py-1 border border-gray-300 shadow`}
     >
       <div className="text-xl font-semibold flex justify-between">
         <a href={Project.link} target="_blank" rel="noreferrer">
@@ -29,7 +29,7 @@ export default function Project(Project: Details) {
         </a>
         <time>{Project.date}</time>
       </div>
-      <div className="flex flex-col md:flex-row md:gap-10">
+      <div className="flex flex-col md:flex-row md:gap-7">
         <a
           href={Project.link}
           className="h-fit"
