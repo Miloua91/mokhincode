@@ -21,7 +21,7 @@ interface Details {
 export default function Project(Project: Details) {
   return (
     <div
-      className={`dark:bg-stone-600 dark:text-stone-100 dark:border-stone-500 my-6 2xl:w-full lg:w-[760px] m-auto ${Project.Pstyle} bg-stone-50 rounded-md px-2 py-1 border border-gray-300 shadow`}
+      className={`dark:bg-stone-600 dark:text-stone-100 dark:border-stone-500 my-6 lg:w-full m-auto ${Project.Pstyle} bg-stone-50 rounded-md px-2 py-1 border border-gray-300 shadow`}
     >
       <div className="text-xl font-semibold flex justify-between">
         <a href={Project.link} target="_blank" rel="noreferrer">
@@ -70,7 +70,7 @@ export default function Project(Project: Details) {
           <div className="flex flex-col md:flex-row md:gap-2 my-4 md:text-[16px]">
             {Project.button1 && (
               <a
-                className="my-2 w-full text-center text-lg bg-white hover:bg-gray-100 text-gray-800  md:pb-1 px-1 border border-gray-400 rounded-lg shadow"
+                className="my-2 w-full text-center text-lg bg-white hover:bg-gray-100 text-gray-800 md:pb-1 px-1 border border-gray-400 rounded-lg shadow"
                 href={Project.link}
                 target="_blank"
                 rel="noreferrer"
@@ -81,7 +81,7 @@ export default function Project(Project: Details) {
 
             {Project.button2 && (
               <a
-                className="my-2 w-full text-center text-lg bg-white hover:bg-gray-100 text-gray-800  md:pb-1 px-1 border border-gray-400 rounded-lg shadow"
+                className="my-2 w-full text-center text-lg bg-white hover:bg-gray-100 text-gray-800 md:pb-1 px-1 border border-gray-400 rounded-lg shadow"
                 href={Project.githubLink}
                 target="_blank"
                 rel="noreferrer"
@@ -91,7 +91,7 @@ export default function Project(Project: Details) {
             )}
             {Project.button3 && (
               <a
-                className="my-2 w-full text-center text-lg bg-white hover:bg-gray-100 text-gray-800  md:pb-1 px-1 border border-gray-400 rounded-lg shadow"
+                className="my-2 w-full text-center text-lg bg-white hover:bg-gray-100 text-gray-800 md:pb-1 px-1 border border-gray-400 rounded-lg shadow"
                 href={Project.postLink}
               >
                 {Project.button3}
