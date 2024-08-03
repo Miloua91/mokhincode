@@ -65,11 +65,26 @@ export default function Wave(props: prop) {
       <div className="flex items-center">
         <div className="w-10 h-10 py-5 ml-5 mr-2">
           {loading ? (
-            <PlayCircleIcon height={36} width={36} className="animate-pulse" />
+            <PlayCircleIcon
+              height={36}
+              width={36}
+              className="animate-pulse"
+              color="black"
+            />
           ) : !playPause ? (
-            <PlayCircleIcon height={36} width={36} onClick={togglePlay} />
+            <PlayCircleIcon
+              height={36}
+              width={36}
+              onClick={togglePlay}
+              color="black"
+            />
           ) : (
-            <PauseCircleIcon height={36} width={36} onClick={togglePause} />
+            <PauseCircleIcon
+              height={36}
+              width={36}
+              onClick={togglePause}
+              color="black"
+            />
           )}
         </div>
         <div className="w-full h-10">
