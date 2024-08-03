@@ -4,7 +4,7 @@ title: 'ClipWarp: An overengineered solution for sharing text and links across p
 author: Miloua Mokhtar
 date: 26/06/2024 
 description: Developing a cross-platform link and text manager.  
-audio: 
+audio: clip.ogg 
 location: 3
 titles:
   - Why make ClipWarp
@@ -17,7 +17,7 @@ titles:
 
 <div align="center">
 
-<img src="/presentation.png" class="mt-24 xl:mt-0 -mb-16">
+<img src="/presentation.png" class="mt-24 xl:mt-0 -mb-8">
 
 </div>
 
@@ -53,7 +53,7 @@ Well, I was learning python while making the app, just doing the project based l
 
 I served the files on the local network with <a href="https://www.uvicorn.org/" target="_blank">uvicorn</a>, which is a web server and <a href="https://www.neoteroi.dev/blacksheep/" target="_blank">blacksheep</a>, which is an asynchronous web framework. These two python packages worked great in development but when I wanted to make an executable I faced many issues (I might have a skill issue) related to hidden imports with pyinstaller to missing files that blacksheep needs so I switched to flask which did both of these packages work, I also was using flask as a backend server to send the data which I stored in a SQLite database locally of course.
 
-At this point my friend was also making the GUI app, he made it with PyQt and all it did was send the data with a WebSocket server.
+At this point my friend was also making his version of the GUI app, he made it with PyQt and all it did was send the data with a WebSocket server.
 
 <div align="center">
 
