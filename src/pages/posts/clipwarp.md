@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/postsLayout.astro
-title: 'ClipWarp: An overengineered solution for sharing text and links across platforms'
+title: 'ClipWarp: An over engineered solution for sharing text and links across platforms'
 author: Miloua Mokhtar
 date: 26/06/2024 
 description: Developing a cross-platform link and text manager.  
