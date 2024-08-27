@@ -61,7 +61,7 @@ export default function Project(Project: Details) {
               >
                 <img
                   src={badge}
-                  alt={badge}
+                  alt={Project.stacks[index]}
                   className="rounded w-auto h-[28px]"
                   width={110}
                   height={28}
