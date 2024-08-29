@@ -18,7 +18,6 @@ interface Details {
   button3: string;
 }
 
-//TODO: Change badge with stack in alt
 
 export default function Project(Project: Details) {
   return (
