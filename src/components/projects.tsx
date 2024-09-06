@@ -18,11 +18,10 @@ interface Details {
   button3: string;
 }
 
-
 export default function Project(Project: Details) {
   return (
     <div
-      className={`dark:bg-stone-600 dark:text-stone-100 dark:border-stone-500 my-6 lg:w-full m-auto ${Project.Pstyle} bg-stone-50 rounded-md px-2 py-1 border border-gray-300 shadow`}
+      className={`dark:bg-stone-600 dark:text-stone-100 dark:border-stone-500 my-6 lg:w-full m-auto ${Project?.Pstyle} bg-stone-50 rounded-md px-2 py-1 border border-gray-300 shadow`}
     >
       <div className="text-xl font-semibold flex justify-between">
         <a href={Project.link} target="_blank" rel="noreferrer">
