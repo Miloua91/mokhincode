@@ -1,4 +1,4 @@
-<button id="themeToggle" class="mt-[1px] -ml-1">
+<button id="themeToggle" class="mt-[1px] -ml-1" transition:persist>
   <svg
     width="24px"
     class="absolute ml-[1px] -mt-[2px]"
@@ -12,7 +12,7 @@
     ></path>
   </svg>
   <svg
-    class=""
+    class="sun"
     width="24px"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 512 512"
@@ -25,7 +25,7 @@
   </svg>
 </button>
 
-<style>
+<style transition:persist>
   #themeToggle {
     border: 0;
     background: none;
@@ -45,24 +45,26 @@
   }
 </style>
 
-<script is:inline>
-  const theme = (() => {
-    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
-      return localStorage.getItem("theme");
+<script is:inline transition:persist>
+  const applyTheme = () => {
+    const theme =
+      localStorage.getItem("theme") ||
+      (window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light");
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
     }
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    }
-    return "light";
-  })();
+  };
 
-  if (theme === "light") {
-    document.documentElement.classList.remove("dark");
-  } else {
-    document.documentElement.classList.add("dark");
-  }
-
-  window.localStorage.setItem("theme", theme);
+  const setupThemeToggleButton = () => {
+    const button = document.getElementById("themeToggle");
+    if (!button) return;
+    button.removeEventListener("click", handleToggleClick);
+    button.addEventListener("click", handleToggleClick);
+  };
 
   const handleToggleClick = () => {
     const element = document.documentElement;
@@ -72,7 +74,11 @@
     localStorage.setItem("theme", isDark ? "dark" : "light");
   };
 
-  document
-    .getElementById("themeToggle")
-    .addEventListener("click", handleToggleClick);
+  applyTheme();
+  setupThemeToggleButton();
+
+  document.addEventListener("astro:after-swap", () => {
+    applyTheme();
+    setupThemeToggleButton();
+  });
 </script>
