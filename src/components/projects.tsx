@@ -56,6 +56,7 @@ export default function Project(Project: Details) {
                 href={Project.stackLinks[index]}
                 target="_blank"
                 rel="noreferrer"
+                key={index}
               >
                 <img
                   src={badge}
@@ -63,6 +64,7 @@ export default function Project(Project: Details) {
                   className="rounded w-auto h-[28px]"
                   width={110}
                   height={28}
+                  loading="lazy"
                 />
               </a>
             ))}
