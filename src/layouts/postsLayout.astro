@@ -209,6 +209,10 @@ const { title, author, date, description, titles, audio } = frontmatter;
         "astro:after-swap",
         initScrollAnimationAndMenuControl,
       );
+      document.addEventListener(
+        "astro:page-load",
+        initScrollAnimationAndMenuControl,
+      );
     </script>
 
     <style is:global>
