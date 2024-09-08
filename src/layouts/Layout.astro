@@ -1,5 +1,4 @@
 ---
-import { ViewTransitions } from "astro:transitions";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../style/global.css";
@@ -65,7 +64,6 @@ const { title } = Astro.props;
     />
 
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
-    <ViewTransitions />
   </head>
   <body class="font-dosis min-h-screen bg-stone-50 dark:bg-stone-800">
     <Header />
@@ -75,6 +73,9 @@ const { title } = Astro.props;
     </footer>
 
     <style is:global>
+      @view-transition {
+        navigation: auto; /* enabled! */
+      }
       :root {
         --accent: 136, 58, 234;
         --accent-light: 224, 204, 250;
