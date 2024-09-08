@@ -64,7 +64,7 @@ export default function Project(Project: Details) {
                   className="rounded w-auto h-[28px]"
                   width={110}
                   height={28}
-                  loading="lazy"
+                  loading="eager"
                 />
               </a>
             ))}
