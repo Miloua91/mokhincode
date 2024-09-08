@@ -1,5 +1,4 @@
 ---
-import { ViewTransitions } from "astro:transitions";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../style/global.css";
@@ -53,8 +52,6 @@ const { title, author, date, description, titles, audio } = frontmatter;
       content="https://mokhincode.com/twitterImage.jpg"
     />
     <!-- ... -->
-
-    <ViewTransitions />
   </head>
   <body class="mx-[10px] font-dosis min-h-screen dark:bg-stone-800">
     <Header />
@@ -216,6 +213,9 @@ const { title, author, date, description, titles, audio } = frontmatter;
     </script>
 
     <style is:global>
+      @view-transition {
+        navigation: auto; /* enabled! */
+      }
       #nav li a.active {
         color: rgb(115 115 115);
       }
