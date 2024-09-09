@@ -82,7 +82,7 @@ This UI took more work than it should have but I am glad how it turned out. With
 
 I had intentions to develop mobile apps since I started programming, everyone has a phone nowadays so it's easier to reach people making something they would find useful. I hope ClipWarp is as useful as I intended to be. 
 
-I was skeptical of React Native, to develop cross mobile apps using javascript sounds a bit too good but after using it with Expo I became infatuated, it kinda gamified the process and made it enjoyable. The pictures are proof of it.
+I was skeptical of React Native, to develop cross mobile apps using JavaScript sounds a bit too good but after using it with Expo I became infatuated, it kinda gamified the process and made it enjoyable. The pictures are proof of it.
 
 <div align="center">
 
