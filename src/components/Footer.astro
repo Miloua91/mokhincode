@@ -5,7 +5,9 @@ import ThemeToggle from "./ThemeToggle.astro";
 <div
   class="dark:bg-stone-700 2xl:w-1/2 flex flex-col-reverse gap-2 sm:flex-row items-center justify-between lg:w-[798px] lg:m-auto text-xl bg-white rounded-md px-2 py-1 border dark:border-stone-600 shadow"
 >
-  <ul class="flex w-80 justify-around sm:justify-normal sm:gap-8 items-center">
+  <ul
+    class="grid grid-cols-5 w-full sm:w-72 justify-items-center sm:justify-normal sm:gap-8 items-center"
+  >
     <li>
       <a href="mailto:miloua23@gmail.com" target="_blank">
         <svg
@@ -43,8 +45,8 @@ import ThemeToggle from "./ThemeToggle.astro";
         </svg>
       </a>
     </li>
-    <li>
-      <a href="https://github.com/Miloua91" target="_blank"
+    <li class="col-span-3">
+      <a href="https://github.com/Miloua91" class="col-span-2" target="_blank"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -75,9 +77,11 @@ import ThemeToggle from "./ThemeToggle.astro";
       >
     </li>
   </ul>
-  <ul class="flex gap-4 sm:gap-4 items-center">
+  <ul
+    class="grid grid-cols-7 w-full sm:w-fit sm:justify-end gap-2 sm:gap-4 items-center"
+  >
     <li
-      class="group text-gray-800 transition-all duration-300 ease-in-out font-semibold"
+      class="group text-gray-800 justify-self-center transition-all duration-300 ease-in-out font-semibold"
     >
       <a
         href="/"
@@ -85,9 +89,9 @@ import ThemeToggle from "./ThemeToggle.astro";
         >Home</a
       >
     </li>
-    <span>|</span>
+    <span class="justify-self-center">|</span>
     <li
-      class="group text-gray-800 transition-all duration-300 ease-in-out font-semibold"
+      class="group text-gray-800 justify-self-center transition-all duration-300 ease-in-out font-semibold"
     >
       <a
         href="/posts"
@@ -95,9 +99,9 @@ import ThemeToggle from "./ThemeToggle.astro";
         >Posts</a
       >
     </li>
-    <span>|</span>
+    <span class="justify-self-center">|</span>
     <li
-      class="group text-gray-800 transition-all duration-300 ease-in-out font-semibold"
+      class="group text-gray-800 justify-self-center transition-all duration-300 ease-in-out font-semibold"
     >
       <a
         href="/about"
@@ -105,7 +109,7 @@ import ThemeToggle from "./ThemeToggle.astro";
         >About</a
       >
     </li>
-    <span>|</span>
+    <span class="justify-self-center">|</span>
     <li
       class="flex justify-center items-center group text-gray-800 transition-all duration-300 ease-in-out font-semibold"
     >
