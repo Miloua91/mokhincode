@@ -6,7 +6,7 @@ import ThemeToggle from "./ThemeToggle.astro";
   class="dark:bg-stone-700 2xl:w-1/2 flex flex-col-reverse gap-2 sm:flex-row items-center justify-between lg:w-[798px] lg:m-auto text-xl bg-white rounded-md px-2 py-1 border dark:border-stone-600 shadow"
 >
   <ul
-    class="grid grid-cols-5 w-full sm:w-72 justify-items-center sm:justify-normal sm:gap-8 items-center"
+    class="grid grid-cols-5 w-full sm:grid-cols-3 sm:w-56 justify-items-center sm:justify-normal sm:gap-8 items-center"
   >
     <li>
       <a href="mailto:miloua23@gmail.com" target="_blank">
@@ -45,7 +45,7 @@ import ThemeToggle from "./ThemeToggle.astro";
         </svg>
       </a>
     </li>
-    <li class="col-span-3">
+    <li class="col-span-3 sm:col-span-1">
       <a href="https://github.com/Miloua91" class="col-span-2" target="_blank"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ import ThemeToggle from "./ThemeToggle.astro";
     </li>
   </ul>
   <ul
-    class="grid grid-cols-7 w-full sm:w-fit sm:justify-end gap-2 sm:gap-4 items-center"
+    class="sm:-mr-4 grid grid-cols-7 w-full sm:w-fit sm:justify-end items-center"
   >
     <li
       class="group text-gray-800 justify-self-center transition-all duration-300 ease-in-out font-semibold"
@@ -111,7 +111,7 @@ import ThemeToggle from "./ThemeToggle.astro";
     </li>
     <span class="justify-self-center">|</span>
     <li
-      class="flex justify-center items-center group text-gray-800 transition-all duration-300 ease-in-out font-semibold"
+      class="flex justify-center sm:justify-start w-full items-center group text-gray-800 transition-all duration-300 ease-in-out font-semibold"
     >
       <ThemeToggle />
     </li>
