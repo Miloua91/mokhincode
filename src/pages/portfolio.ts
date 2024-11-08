@@ -44,7 +44,7 @@ Sometimes working on the frontend, sometimes fullstack. To build my projects, I 
 \x1b[37mProject's\x1b[0m
 \x1b[36mDetails:\x1b[0m https://mokhincode.com/posts/artistrynest
 \x1b[36mCode:\x1b[0m https://github.com/Miloua91/artistrynest
-\x1b[36mSite:\x1b[0m https://artistrynest.shop
+\x1b[36mSite:\x1b[0m https://artistrynest.vercel.app
 
 
 \x1b[1;4;32mwhoami:\x1b[0m
