@@ -17,7 +17,7 @@ titles:
 
 ## **Introduction:**
 
-Before diving into this <a href="https://artistrynest.shop" target="_blanck">project</a> I need to give some background about my self and motivation. I started learning web dev a month after graduation. I chose Java, thinking it would open up more job opportunities on the corporate side (The job market is tough though 눈_눈 ). However, a month later, a friend of mine convinced me that web development could offer even more opportunities.
+Before diving into this <a href="https://artistrynest.vercel.app" target="_blanck">project</a> I need to give some background about my self and motivation. I started learning web dev a month after graduation. I chose Java, thinking it would open up more job opportunities on the corporate side (The job market is tough though 눈_눈 ). However, a month later, a friend of mine convinced me that web development could offer even more opportunities.
 
 I had nothing to lose, so I began learning another language again—this time it was easier, thanks to <a href="https://www.youtube.com/@BroCodez" target="_blank">Bro Code</a> where I had previously learned Java from his courses.
 
