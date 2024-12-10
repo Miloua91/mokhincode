@@ -14,8 +14,7 @@ export default defineConfig({
     react(),
     mdx(),
   ],
-  site: "https://Miloua91.github.io",
+  site: "https://miloua.com",
   outDir: "./dist",
   output: "static",
-  base: "mokh",
 });
