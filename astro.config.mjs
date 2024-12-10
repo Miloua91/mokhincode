@@ -16,7 +16,7 @@ export default defineConfig({
     mdx(),
   ],
   site: 'https://Miloua91.github.io',
-  base: 'my-repo',
+  base: 'mokhincode',
   adapter: vercel({
     webAnalytics: { enabled: true },
   }),
