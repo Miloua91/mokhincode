@@ -15,7 +15,8 @@ export default defineConfig({
     react(),
     mdx(),
   ],
-  output: "static",
+  site: 'https://Miloua91.github.io',
+  base: 'my-repo',
   adapter: vercel({
     webAnalytics: { enabled: true },
   }),
