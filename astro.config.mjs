@@ -17,4 +17,5 @@ export default defineConfig({
   site: "https://Miloua91.github.io",
   outDir: "./dist",
   output: "static",
+  base: "mokh",
 });
