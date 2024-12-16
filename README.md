@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://mokhincode.com">
+  <a href="https://miloua.com">
     <img src="./public/icon.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -9,14 +9,14 @@
 
   <p align="center">
     My Portfolio website to showcase my projects and write posts from time to time.
-    <a href="https://mokhincode.com">Check the website.</a>
+    <a href="https://miloua.com">Check the website.</a>
   </p>
 </div>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Website
 
-[![Product Name Screen Shot][product-screenshot]](https://mokhincode.com)
+[![Product Name Screen Shot][product-screenshot]](https://miloua.com)
 
 A simple minimal portfolio website to showcase my frontend skills and fullstack projects.
 
