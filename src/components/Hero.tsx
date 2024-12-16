@@ -42,17 +42,19 @@ export function Front() {
               <div className="w-full sm:px-4 gap-y-2 grid sm:grid-cols-none sm:grid-flow-col grid-cols-3 justify-between items-center">
                 <a
                   className="col-span-2 sm:col-span-1 text-lg font-semibold justify-self-center"
-                  href="mailto:miloua23@gmail.com"
+                  href="mailto:mokhtar@miloua.com"
                   target="_blank"
                   rel="noreferrer"
+                  data-umami-event={`Email`}
                 >
-                  miloua23@gmail.com
+                  mokhtar@miloua.com
                 </a>
                 <a
                   href="https://www.instagram.com/miloua191"
                   target="_blank"
                   rel="noreferrer"
                   className="justify-self-center"
+                  data-umami-event={`Instagram`}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -72,6 +74,7 @@ export function Front() {
                   target="_blank"
                   rel="noreferrer"
                   className="justify-self-center"
+                  data-umami-event={`LinekedIn`}
                 >
                   {" "}
                   <svg
@@ -93,6 +96,7 @@ export function Front() {
                   target="_blank"
                   rel="noreferrer"
                   className="justify-self-center"
+                  data-umami-event={`GitHub`}
                 >
                   {" "}
                   <svg
@@ -111,6 +115,7 @@ export function Front() {
                   target="_blank"
                   rel="noreferrer"
                   className="justify-self-center"
+                  data-umami-event={`Upwork`}
                 >
                   <svg
                     width="32"

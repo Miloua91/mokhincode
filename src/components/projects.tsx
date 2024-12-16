@@ -35,6 +35,7 @@ export default function Project(Project: Details) {
           className="h-fit"
           target="_blank"
           rel="noreferrer"
+          data-umami-event={`Clicked on project image`}
         >
           <picture>
             <source media="(max-width: 767px)" srcSet={Project.imageSet} />
@@ -76,6 +77,7 @@ export default function Project(Project: Details) {
                 href={Project.link}
                 target="_blank"
                 rel="noreferrer"
+                data-umami-event={`Browsed ${Project.projectTitle}`}
               >
                 {Project.button1}
               </a>
@@ -87,6 +89,7 @@ export default function Project(Project: Details) {
                 href={Project.githubLink}
                 target="_blank"
                 rel="noreferrer"
+                data-umami-event={`Checked ${Project.projectTitle} code`}
               >
                 {Project.button2}
               </a>
@@ -95,6 +98,7 @@ export default function Project(Project: Details) {
               <a
                 className="my-2 w-full text-center text-lg bg-white hover:bg-gray-100 text-gray-800 md:pb-1 px-1 border border-gray-400 rounded-lg shadow"
                 href={Project.postLink}
+                data-umami-event={`Read ${Project.projectTitle} post`}
               >
                 {Project.button3}
               </a>

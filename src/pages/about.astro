@@ -46,39 +46,47 @@ import Layout from "../layouts/Layout.astro";
         target="_blank"
         rel="noreferrer"
         class="font-semibold cursor-book color-transition dark:hover:text-stone-300 hover:text-muted-foreground"
-        >books</a
+        data-umami-event={`Bookshelf`}>books</a
       >, enjoy <a
         class="font-semibold cursor-zeus color-transition dark:hover:text-stone-300 hover:text-muted-foreground"
         href="/philosophy"
         target="_blank"
+        data-umami-event={`Philosophy`}
         rel="noreferrer">philosophy</a
       >, was addicted to <a
         class="font-semibold cursor-knight color-transition dark:hover:text-stone-300 hover:text-muted-foreground"
         href="https://www.chess.com/member/astroboi21"
         target="_blank"
+        data-umami-event={`Chess`}
         rel="noreferrer">chess</a
       >, indie <a
         class="font-semibold cursor-ship color-transition dark:hover:text-stone-300 hover:text-muted-foreground"
         href="https://volt.fm/astroboi99"
         target="_blank"
+        data-umami-event={`Music`}
         rel="noreferrer">music</a
       > fan and retro video games enjoyer.
     </div>
     <div class="text-center text-xl">
       You can find me on <b class="hover:underline"
-        ><a href="https://github.com/Miloua91" target="_blank" rel="noreferrer"
-          >GitHub</a
+        ><a
+          href="https://github.com/Miloua91"
+          data-umami-event={`GitHub about`}
+          target="_blank"
+          rel="noreferrer">GitHub</a
         ></b
       >, <b class="hover:underline"
         ><a
           href="https://www.linkedin.com/in/mokhtar-miloua/"
           target="_blank"
+          data-umami-event={`LinkedIn about`}
           rel="noreferrer">LinkedIn</a
         ></b
       > or DM me on <b class="hover:underline"
         ><a
           href="https://www.instagram.com/miloua191"
           target="_blank"
+          data-umami-event={`Instagram about`}
           rel="noreferrer">Instagram</a
         ></b
       >.
@@ -144,6 +152,7 @@ import Layout from "../layouts/Layout.astro";
           DOI: <a
             href="https://doi.org/10.1109/M2GARSS57310.2024.10537513"
             target="_blank"
+            data-umami-event={`Article DOI`}
             class="font-bold break-all">10.1109/M2GARSS57310.2024.10537513</a
           >
         </p>

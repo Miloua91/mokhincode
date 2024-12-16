@@ -77,6 +77,7 @@ export default function Wave(props: prop) {
               width={36}
               onClick={togglePlay}
               color="black"
+              data-umami-event={`Played ${props.audio}`}
             />
           ) : (
             <PauseCircleIcon
